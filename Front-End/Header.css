@@ -1,0 +1,32 @@
+/* Header Container*/
+.header_container {
+    width: 100%;
+    max-width: 100wv;
+    height: 80px;
+    background-color: #4CAF50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+/* Logo Container */
+.header_logo_container {
+    background-color: #844caf;
+    width: 20%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.header_logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+  }
