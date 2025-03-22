@@ -1,17 +1,22 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
-import Header from '../Front-End/Header'
+/*App.jsx*/
+
+import React, { useState } from "react";
+import Header from "../Front-End/Header";
+import Sidebar from "../Front-End/Sidebar";
+import HydroponicBackground from "../Content/Background"; // Import the new background component
 
 function App() {
-  // const [count, setCount] = useState(0)
+    const [navigationText, setNavigationText] = useState("Dashboard"); // Default text
 
-  return (
-    <>
-      <Header />
-    </>
-  )
+    return (
+        <div className="app-container">
+            <Header navigationText={navigationText} />
+            <div className="main-content">
+                <Sidebar setNavigationText={setNavigationText} />
+                <HydroponicBackground />
+            </div>
+        </div>
+    );
 }
 
-export default App
+export default App;

@@ -1,0 +1,73 @@
+/* Sidebar Base Styles */
+.sidebar {
+    width: 250px;
+    background-color: white;
+    padding: 10px;
+    margin-top: 80px;
+    transition: width 0.3s ease-in-out;
+    overflow-x: hidden;
+}
+
+/* Collapsed Sidebar */
+.sidebar.collapsed {
+    width: 100px;
+    padding: 10px;
+}
+
+/* Sidebar List */
+.sidebar .MuiList-root {
+    padding: 0;
+}
+
+/* Sidebar Buttons */
+.sidebar .MuiListItemButton-root {
+    background-color: #66bb6a; /* Green color */
+    margin: 8px 10px;
+    border-radius: 25px;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sidebar .MuiListItemButton-root:hover {
+    background-color: #4caf50;
+}
+
+/* Sidebar Icons */
+.sidebar .MuiListItemIcon-root {
+    min-width: 40px;
+    color: black;
+}
+
+/* Ensures circular green background for icons when collapsed */
+.sidebar.collapsed .MuiListItemIcon-root {
+    background-color: #66bb6a;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Ensures button alignment in collapsed mode */
+.sidebar.collapsed .MuiListItemButton-root {
+    justify-content: center;
+    padding: 10px 0;
+}
+
+/* Sidebar Text */
+.sidebar .MuiListItemText-primary {
+    font-weight: bold;
+    color: black;
+}
+
+/* Sidebar Toggle Button */
+.toggle_button {
+    position: absolute;
+    top: 15px;
+    right: 15px; /* Moved toggle button to the right */
+    color: black;
+    background-color: transparent;
+    border-radius: 50%;
+}
