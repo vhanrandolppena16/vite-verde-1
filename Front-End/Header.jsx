@@ -1,4 +1,4 @@
-import logo from '../src/assets/images/verde-logo.png';
+import logo from '../src/assets/images/Verde Logo Name.png';
 import "./Header.css";
 
 function Header(){
@@ -9,7 +9,7 @@ function Header(){
                 <img src={logo} alt="Verde Logo" className="header_logo" />                
             </div>
         </nav>
-    )
-}
+    );
+};
 
 export default Header;
