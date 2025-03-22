@@ -18,12 +18,12 @@
 /* Logo Container */
 .header_logo_container {
     background-color: #844caf;
-    width: 20wv;
+    width: 10%;
     height: 100%;
     flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
   }
 
 .header_logo {
