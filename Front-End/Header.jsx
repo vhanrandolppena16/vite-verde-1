@@ -1,5 +1,5 @@
     /*Header.jsx */
-    import logo from '../src/assets/images/Verde Logo Name.png';
+    import logo from '../src/assets/images/LOGO2.png';
     import AccountCircleIcon from '@mui/icons-material/AccountCircle';
     import "./Header.css";
     import React from "react";

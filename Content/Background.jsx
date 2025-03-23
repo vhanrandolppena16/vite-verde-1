@@ -1,11 +1,11 @@
 import React from "react";
 import "./Background.css";
 
-const HydroponicBackground = () => {
+const HydroponicBackground = ({ collapsed }) => {
     return (
-        <div className="container">
+        <div className={`background-container ${collapsed ? "expanded" : ""}`}>
             <div className="content">
-                <h1>Welcome to the Hydroponic Dashboard</h1>
+                <h1>{collapsed ? "Full View Mode" : "Sidebar Expanded Mode"}</h1>
             </div>
         </div>
     );

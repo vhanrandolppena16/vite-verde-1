@@ -28,6 +28,7 @@ const Sidebar = ({ setNavigationText }) => {
 
     return (
         <div className={`sidebar ${collapsed ? "collapsed" : ""}`}>
+            {/* Sidebar Header with Toggle Button */}
             <div className="sidebar-header">
                 <IconButton className="toggle-button" onClick={() => setCollapsed(!collapsed)}>
                     <MenuIcon fontSize="large" />

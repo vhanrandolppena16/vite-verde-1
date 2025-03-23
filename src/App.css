@@ -6,13 +6,26 @@
   text-align: center;
 }
 
-.main-content {
-  flex: 1;
+.app-container {
+  display: flex;
   height: 100vh;
   width: 100vw;
-  background: url("../src/assets/images/hydroponics.jpg"); /* Ensure correct path */
-  background-size: cover;
-  transition: margin-left 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+/* Background Image Styling */
+.main-content {
+  flex-grow: 1;
+  min-height: 100vh; /* Make sure it covers the full height */
+  width: 100vw; /* Covers the full width */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Moves it behind other elements */
+}
+
+/* Adjust Main Content When Sidebar Collapses */
+.sidebar.collapsed ~ .main-content {
+  margin-left: 80px;
 }
 
 .logo {

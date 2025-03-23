@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import DashboardIcon from "@mui/icons-material/Dashboard";
@@ -9,11 +9,9 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import InfoIcon from "@mui/icons-material/Info";
 import LogoutIcon from "@mui/icons-material/Logout";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
-import "./SidebarProto.css";
+import "./Sidebar.css";
 
-const Sidebar = ({ setNavigationText }) => {
-    const [collapsed, setCollapsed] = useState(false);
-
+const Sidebar = ({ setNavigationText, collapsed, setCollapsed }) => {
     const menuItems = [
         { text: "Dashboard", icon: <DashboardIcon /> },
         { text: "Analysis", icon: <AssessmentIcon /> },
